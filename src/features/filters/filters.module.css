@@ -1,0 +1,21 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #E9F1FA;
+  height: 50px;
+}
+
+.searchFilter input {
+  width: 200px;
+}
+
+.sortFilter span {
+  margin-right: 10px;
+}
+
+.sortFilter select {
+  width: 120px;
+}

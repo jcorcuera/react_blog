@@ -1,0 +1,29 @@
+.postList {
+  padding: 20px;
+  text-align: left;
+}
+
+.postListCount {
+  font-size: 20px;
+  color: #1e375a;
+}
+
+.postListItems ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.postListItems li {
+  margin: 20px 0;
+  padding: 10px;
+  border: #E9F1FA 1px solid;
+  border-radius: 10px;
+}
+
+.postListItems li a {
+  color: #00ABE4;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}

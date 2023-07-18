@@ -1,0 +1,9 @@
+.post {
+  padding: 20px;
+  text-align: left;
+}
+
+.post h1 {
+  font-size: 30px;
+  color: #254570;
+}

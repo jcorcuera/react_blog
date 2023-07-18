@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
+
+import Navbar from './features/navbar/navbar';
+import PostList from './features/posts/postList';
+import Post from './features/posts/post';
+import Album from './features/album/album';
+import Filters from './features/filters/filters';
+
+import styles from './App.module.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className={styles.App}>
+        <Navbar />
+        <Switch>
+          <Route exact path='/'>
+            <Filters />
+            <PostList />
+          </Route>
+          <Route path='/posts/:id'>
+            <Post />
+          </Route>
+          <Route path='/album'>
+            <Album />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
