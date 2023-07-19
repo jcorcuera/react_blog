@@ -39,7 +39,7 @@ function Filters() {
       </div>
       <div className={styles.sortFilter}>
         <span>Sort</span>
-        <select onChange={handleSortChanged} value={sortValue}>
+        <select onChange={handleSortChanged} value={sortValue} data-testid="sorting-select-testid">
           { Object.entries(SortFilters).map(([key, value]) => {
             return <option key={key} alue={key}>{value}</option>
           }) }
